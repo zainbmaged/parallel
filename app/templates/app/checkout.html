@@ -12,7 +12,7 @@
     {%endif %} 
  <div class=" row mt-5" >
     <div class="col-sm-6">
-        <h4>Order Symmmary</h4>
+        <h4>Order Summary</h4>
         <hr>
         {% for item in cart_items %}
           <div class = "card mb-2">
@@ -51,7 +51,7 @@
                 <input type="number" class="form-control" name="totalamount" value={{totalamount}} readonly>
             </div>
             <div class="text-end">
-                <button type="submit" class="btn btn-warning mt-3 px-5 fw-bold"> continue </button> 
+                <button type="submit" class="btn btn-warning mt-3 px-5 fw-bold"> Continue </button> 
                 <!-- <div id="paypal-button-container"></div>-->
                 {% comment "" %}<button id="rzp-button1" type="submit" class="btn btn-warning mt-3 px-5 fw-bold">payment</button> {% endcomment %}
 
