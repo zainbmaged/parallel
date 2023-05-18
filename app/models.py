@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+import uuid
 
 # Create your models here.
 
@@ -23,6 +24,8 @@ class Product(models.Model):
     prodapp = models.TextField(default='')
     category = models.CharField(choices=CATEGORY_CHOICES, max_length=20)
     product_image = models.ImageField(upload_to = 'product')
+
+    #id = models.UUIDField(default= uuid.uuid4, editable=False, primary_key=True, unique=True)
     def __str__(self):
         return self.title
     
